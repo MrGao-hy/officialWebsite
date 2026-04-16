@@ -1,0 +1,1 @@
+import{_ as e,o as s,c as o,aj as a}from"./chunks/framework.CXG4ut3z.js";const m=JSON.parse('{"title":"课题组系统","description":"","frontmatter":{},"headers":[],"relativePath":"system.md","filePath":"zh/system.md"}'),c={name:"system.md"};function r(d,t,l,n,i,p){return s(),o("div",null,[...t[0]||(t[0]=[a("",3)])])}const u=e(c,[["render",r]]);export{m as __pageData,u as default};
