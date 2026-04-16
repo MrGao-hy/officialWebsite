@@ -36,6 +36,10 @@ export default defineConfig({
           level: [2, 3],
           label: '当前页大纲'
         },
+        editLink: {
+          pattern: 'https://github.com/MrGao-hy/officialWebsite/edit/main/docs/:path', // 改成自己的仓库
+          text: '在GitHub编辑本页'
+        },
         footer: {
           message: '© 2026 宋培彦. 保留所有权利。',
           copyright: 'Copyright © 2019-present Evan You'
