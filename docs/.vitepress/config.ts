@@ -9,6 +9,7 @@ export default defineConfig({
     'zh/index.md': 'index.md',
     'zh/:path*': ':path*'
   },
+  lastUpdated: true,
   locales: {
     root: {
       label: "中文",
