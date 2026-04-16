@@ -3,29 +3,35 @@
 :root {
     --custom-block-info-left: #cccccc;
     --custom-block-info-bg: #fafafa;
+    --custom-block-info-hover: #f0f0f0;
 
     --custom-block-tip-left: #667eea;
     --custom-block-tip-bg: linear-gradient(135deg, #f8f9ff 0%, #f0f4ff 100%);
+    --custom-block-tip-hover: linear-gradient(135deg, #eef2ff 0%, #e0e8ff 100%);
 
     --custom-block-warning-left: #e6a700;
     --custom-block-warning-bg: #fff8e6;
 
     --custom-block-danger-left: #e13238;
     --custom-block-danger-bg: #ffebec;
+    --custom-block-danger-hover: #ffd9dc;
 }
 
 .dark {
     --custom-block-info-left: #cccccc;
     --custom-block-info-bg: #474748;
+    --custom-block-info-hover: #5c5c5e;
 
-    --custom-block-tip-left: #009400;
-    --custom-block-tip-bg: #003100;
+    --custom-block-tip-left: #87a5ff;
+    --custom-block-tip-bg: linear-gradient(135deg, #1e243a 0%, #171c30 100%);
+    --custom-block-tip-hover: linear-gradient(135deg, #2a324f 0%, #1f263e 100%);
 
     --custom-block-warning-left: #e6a700;
     --custom-block-warning-bg: #4d3800;
 
-    --custom-block-danger-left: #e13238;
-    --custom-block-danger-bg: #4b1113;
+    --custom-block-danger-left: #f76b72;
+    --custom-block-danger-bg: #2d1e22;
+    --custom-block-danger-hover: #3d262b;
 }
 
 
@@ -57,21 +63,4 @@
 .custom-block.danger {
     border-left: 5px solid var(--custom-block-danger-left);
     background-color: var(--custom-block-danger-bg);
-}
-
-/* 正文中的链接 */
-.vp-doc a {
-    color: var(--vp-c-brand);
-    text-decoration: none;
-    padding: 2px 6px;
-    border-radius: 4px;
-    transition: background-color 0.2s ease;
-    font-size: 22px;
-    line-height: 30px;
-}
-
-/* 悬浮时出现背景色 */
-.vp-doc a:hover {
-    background-color: var(--vp-c-brand-soft);  /* 品牌色的浅色背景 */
-    text-decoration: none;
 }
