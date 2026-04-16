@@ -1,0 +1,77 @@
+/* .vitepress/theme/styles/custom-block.css */
+/* 深浅色卡 */
+:root {
+    --custom-block-info-left: #cccccc;
+    --custom-block-info-bg: #fafafa;
+
+    --custom-block-tip-left: #667eea;
+    --custom-block-tip-bg: linear-gradient(135deg, #f8f9ff 0%, #f0f4ff 100%);
+
+    --custom-block-warning-left: #e6a700;
+    --custom-block-warning-bg: #fff8e6;
+
+    --custom-block-danger-left: #e13238;
+    --custom-block-danger-bg: #ffebec;
+}
+
+.dark {
+    --custom-block-info-left: #cccccc;
+    --custom-block-info-bg: #474748;
+
+    --custom-block-tip-left: #009400;
+    --custom-block-tip-bg: #003100;
+
+    --custom-block-warning-left: #e6a700;
+    --custom-block-warning-bg: #4d3800;
+
+    --custom-block-danger-left: #e13238;
+    --custom-block-danger-bg: #4b1113;
+}
+
+
+/* 标题字体大小 */
+.custom-block-title {
+    font-size: 16px;
+}
+
+/* info容器:背景色、左侧 */
+.custom-block.info {
+    border-left: 5px solid var(--custom-block-info-left);
+    background-color: var(--custom-block-info-bg);
+}
+
+/* 提示容器:边框色、背景色、左侧 */
+.custom-block.tip {
+    /* border-color: var(--custom-block-tip); */
+    border-left: 5px solid var(--custom-block-tip-left);
+    background: var(--custom-block-tip-bg);
+}
+
+/* 警告容器:背景色、左侧 */
+.custom-block.warning {
+    border-left: 5px solid var(--custom-block-warning-left);
+    background-color: var(--custom-block-warning-bg);
+}
+
+/* 危险容器:背景色、左侧 */
+.custom-block.danger {
+    border-left: 5px solid var(--custom-block-danger-left);
+    background-color: var(--custom-block-danger-bg);
+}
+
+/* 正文中的链接 */
+.vp-doc a {
+    color: var(--vp-c-brand);
+    text-decoration: none;
+    padding: 2px 6px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+/* 悬浮时出现背景色 */
+.vp-doc a:hover {
+    background-color: var(--vp-c-brand-soft);  /* 品牌色的浅色背景 */
+    text-decoration: none;
+}
