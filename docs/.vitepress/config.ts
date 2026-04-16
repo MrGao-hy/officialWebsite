@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress';
 export default defineConfig({
   lang: 'en-US',
   ignoreDeadLinks: true,
+  base: '/officialWebsite/',
   rewrites: {
     'zh/index.md': 'index.md',
     'zh/:path*': ':path*'
@@ -35,7 +36,7 @@ export default defineConfig({
           label: '当前页大纲'
         },
         footer: {
-          message: '© 2025 宋培彦. 保留所有权利。',
+          message: '© 2026 宋培彦. 保留所有权利。',
           copyright: 'Copyright © 2019-present Evan You'
         }
       },
@@ -43,16 +44,32 @@ export default defineConfig({
     en: {
       label: "English",
       lang: "en-US",
-      title: "home",
       link: '/en/',
-    },
-  },
-  themeConfig: {
-    lastUpdated: {
-      text: "最后更新",
-      formatOptions: {
-        dateStyle: "full",
-        timeStyle: "medium",
+      title: "home",
+      themeConfig: {
+        nav: [
+          { text: 'PERSONAGE', link: '/en/home' },
+          { text: 'TEAM', link: '/en/team' },
+          { text: 'PROJECTS', link: '/en/project' },
+          { text: 'ACTIVITIES', link: '/en/activity' },
+          { text: 'ACHIEVEMENTS', link: '/en/achievement' },
+          { text: 'SYSTEMS', link: '/en/system' },
+        ],
+        lastUpdated: {
+          text: "最后更新",
+          formatOptions: {
+            dateStyle: "full",
+            timeStyle: "medium",
+          },
+        },
+        outline: {
+          level: [2, 3],
+          label: 'Current Page'
+        },
+        footer: {
+          message: '© 2026 Peiyan Song. All rights reserved。',
+          copyright: 'Copyright © 2019-present Evan You'
+        }
       },
     },
   },
