@@ -1,0 +1,31 @@
+---
+layout: home
+
+hero:
+  name: 宋培彦
+  text: 教授，硕士生导师
+  tagline: 管理学院数据科学系 副教授 | 教务处 副处长
+  actions:
+    - theme: brand
+      text: 管理学院数据科学系
+      link: https://glxy.tjnu.edu.cn/
+    - theme: alt
+      text: 天津师范大学
+      link: https://www.tjnu.edu.cn/
+  image:
+    src: /images/001.png
+
+features:
+
+  - icon:
+      src: /images/diary_logo.png
+    title: 研究领域
+    details: 知识组织与自然语言处理、人才画像与科技评价、科技大数据管理、管理信息系统等
+  - icon: 🏫
+    title: 联系地址
+    details: 天津市西青区滨水西路393号天津师范大学
+  - icon: 📧
+    title: 邮箱
+    details: songpy@tjnu.edu.cn
+
+---
