@@ -1,1 +1,0 @@
-import{_ as t,I as a,o,c as n,J as r}from"./chunks/framework.CXG4ut3z.js";const u=JSON.parse('{"title":"","description":"","frontmatter":{"layout":"page"},"headers":[],"relativePath":"team.md","filePath":"zh/team.md"}'),s={name:"team.md"};function c(m,p,_,d,l,i){const e=a("team",!0);return o(),n("div",null,[r(e)])}const h=t(s,[["render",c]]);export{u as __pageData,h as default};
