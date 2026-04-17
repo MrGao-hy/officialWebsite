@@ -4,7 +4,6 @@ layout: home
 hero:
   name: 宋培彦
   text: 教授，硕士生导师
-  tagline: 管理学院数据科学系 副教授 | 教务处 副处长
   actions:
     - theme: brand
       text: 管理学院数据科学系
