@@ -83,3 +83,7 @@
 .danger li::before {
     background: var(--custom-block-danger-left);
 }
+
+.VPTeamPage {
+    margin: 0!important;
+}
