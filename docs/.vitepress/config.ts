@@ -7,7 +7,6 @@ export default defineConfig({
   base: '/officialWebsite/',
   rewrites: {
     'zh/index.md': 'index.md',
-    'zh/:path*': ':path*'
   },
   lastUpdated: true,
   locales: {
@@ -18,18 +17,18 @@ export default defineConfig({
       link: '/zh/',
       themeConfig: {
         nav: [
-          { text: '个人简介', link: '/home' },
-          { text: '团队成员', link: '/team' },
-          { text: '项目成果', link: '/project' },
-          { text: '参与活动', link: '/activity' },
-          { text: '学术成果', link: '/achievement' },
-          { text: '系统', link: '/system' },
+          { text: '个人简介', link: '/zh/home' },
+          { text: '团队成员', link: '/zh/team' },
+          { text: '项目成果', link: '/zh/project' },
+          { text: '参与活动', link: '/zh/activity' },
+          { text: '学术成果', link: '/zh/achievement' },
+          { text: '系统', link: '/zh/system' },
         ],
         lastUpdated: {
           text: "最后更新",
           formatOptions: {
             dateStyle: "full",
-            timeStyle: "medium",
+            timeStyle: "full",
           },
         },
         outline: {
@@ -42,7 +41,7 @@ export default defineConfig({
         },
         footer: {
           message: '© 2026 宋培彦. 保留所有权利。',
-          copyright: 'Copyright © 2019-present Evan You'
+          copyright: 'songpy@tjnu.edu.cn'
         }
       },
     },
@@ -61,9 +60,9 @@ export default defineConfig({
           { text: 'SYSTEMS', link: '/en/system' },
         ],
         lastUpdated: {
-          text: "最后更新",
+          text: "Last updated",
           formatOptions: {
-            dateStyle: "full",
+            dateStyle: "short",
             timeStyle: "medium",
           },
         },
@@ -71,9 +70,13 @@ export default defineConfig({
           level: [2, 3],
           label: 'Current Page'
         },
+        editLink: {
+          pattern: 'https://github.com/MrGao-hy/officialWebsite/edit/main/docs/:path', // 改成自己的仓库
+          text: 'Edit this page on GitHub'
+        },
         footer: {
           message: '© 2026 Peiyan Song. All rights reserved。',
-          copyright: 'Copyright © 2019-present Evan You'
+          copyright: 'songpy@tjnu.edu.cn'
         }
       },
     },
