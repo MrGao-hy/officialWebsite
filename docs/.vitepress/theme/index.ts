@@ -1,5 +1,6 @@
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
+import Home from '../components/Home.vue';
 import Team from '../components/Team.vue';
 import Systems from '../components/Systems.vue';
 import Layout from "./CustomLayout.vue";
@@ -13,6 +14,7 @@ export default {
     Layout,
     enhanceApp({ app }) {
         // 注册自定义全局组件
+        app.component('Home', Home)
         app.component('Team', Team)
         app.component('Systems', Systems)
         app.use(Antd);

@@ -18,6 +18,7 @@
     /* 列表悬停专用（更明显） */
     --li-hover-bg: #eef4ff;
     --li-hover-left: #667eea;
+    --vp-nav-bg-color: #0F2C4C;
 }
 
 .dark {
@@ -86,4 +87,23 @@
 
 .VPTeamPage {
     margin: 0!important;
+}
+
+/* 头部颜色自定义 */
+.VPNavBar {
+    background: var(--vp-nav-bg-color);
+}
+.title[data-v-6945d5bf] {
+    color: #ffffff;
+}
+
+.VPNavBarMenuLink[data-v-deb295f5] {
+    color: #ffffff;
+}
+[class^='vpi-']:not(.bg), [class*=' vpi-']:not(.bg), .vp-icon:not(.bg) {
+    background-color: #ffffff;
+}
+
+.container {
+
 }

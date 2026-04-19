@@ -17,11 +17,11 @@ export default defineConfig({
       link: '/zh/',
       themeConfig: {
         nav: [
-          { text: '个人简介', link: '/zh/home' },
+          { text: '首页', link: '/zh/home' },
           { text: '团队成员', link: '/zh/team' },
-          { text: '项目成果', link: '/zh/project' },
-          { text: '参与活动', link: '/zh/activity' },
-          { text: '学术成果', link: '/zh/achievement' },
+          { text: '研究项目', link: '/zh/project' },
+          { text: '获奖情况', link: '/zh/awards' },
+          { text: '研究成果', link: '/zh/achievement' },
           { text: '系统', link: '/zh/system' },
         ],
         lastUpdated: {
