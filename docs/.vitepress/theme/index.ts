@@ -9,16 +9,24 @@ import './styles/custom-block.css'
 import './styles/custom-common.css'
 import Antd from 'ant-design-vue';
 import 'ant-design-vue/dist/reset.css';
+import { inBrowser } from 'vitepress'
+import busuanzi from 'busuanzi.pure.js'
 
 export default {
     extends: DefaultTheme,
     Layout,
-    enhanceApp({ app }) {
+    enhanceApp({ app, router }) {
         // 注册自定义全局组件
         app.component('Home', Home)
         app.component('Team', Team)
         app.component('Systems', Systems)
         app.component('Achievement', Achievement)
         app.use(Antd);
+
+        if (inBrowser) {
+            router.onAfterRouteChanged = () => {
+                busuanzi.fetch()
+            }
+        }
     }
 } satisfies Theme
