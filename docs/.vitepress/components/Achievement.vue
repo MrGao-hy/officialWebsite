@@ -119,7 +119,7 @@ const filteredAchievements = computed(() => {
   align-items: flex-start;
   transition: background-color 0.2s ease;
   &:hover {
-    background-color: var(--vp-c-purple-soft);
+    background-color: var(--vp-c-brand-soft);
   }
   &:last-child {
     border-bottom: none;

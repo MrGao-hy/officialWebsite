@@ -1,33 +1,106 @@
-# 项目详情
+---
+layout: page
+---
 
-## 主持项目 2010至今
+<achievement title="Project Details" :tabs="tabs" :achievements="achievements" />
 
-::: tip 内容
-- 主持2025年天津市首批普通高校新形态教材建设项目“数据库原理及应用”
-- 主持2024年中国科学技术信息研究所情报工程实验室开放基金项目“面向大语言模型检索增强的科技文献深度挖掘研究”
-- 主持2023年天津市科协重点咨询课题“国际科技组织数据库建设与科技热点发现”，在研，委局级.
-- 主持2023年天津市科学技术信息研究所合作课题“科技项目标引加工服务”，纵向，在研，省部级.
-- 主持2023年国际合作研究项目InterPARES (电子系统中文件真实性永久保障国际合作项目)子项目“面向医药古籍保护的可信知识图谱自动构建技术研究与开源应用”（Automatic construction and open source use of trustworthy knowledge graph of ancient Chinese and Italian medical texts），在研.
-- 主持2021年度国家社科基金一般项目“语义驱动的科研人员学术专长画像研究”，在研.
-- 主持2021年度国家科技评估中心评估研究专项“基于专家库静态信息的人才创新能力评价模型研究”，2021.07-2022.07.
-- 主持2020年全国科技名词审定委员会项目“国际组织术语库集成方法研究”，2020.07-2022.12.
-- 主持2017年度中信所创新研究基金面上项目“面向国家科技大数据的知识图谱动态构建方法研究”，单位课题，2017.1-2017.12.
-- 主持2016年度国家社科基金一般项目“基于知识组织的科研项目评审专家发现研究”（项目编号：16BTQ079），国家社会科学基金，2016年7月~2019年8月.
-- 主持2015年度中信所预研基金“应急科技知识聚合方法研究”，单位课题，2015.1-2015.12.
-- 主持2011年度国家社科基金青年项目“基于知识组织的术语服务研究”（项目编号：11CTQ018），国家社会科学基金，2011.7-2014年8月.
-- 主持2011年国家“十二五”科技支撑计划子课题一“面向外文科技文献的超级科技词表和本体建设”子任务“工程技术基础词库建设”，科技部十二五科技支撑计划，2011.7-2015.7，子任务负责人.
-- 主持2011年度中信所预研基金“基于科技语料库的术语参考释义抽取”，单位课题，2011.7-2011.6.
-- 主持2010年中信所预研基金“基于用户交互的科技词表建设与维护机制研究”，单位课题，2010.7-2011.6.
-:::
+<script setup>
+const tabs = [
+    { key: 'all', name: 'All', color: '#1890ff' },
+    { key: 'research', name: 'Horizontal Projects', color: '#fa541c' },
+    { key: 'teaching', name: 'Vertical Projects', color: '#73d13d' }
+];
 
-## 参与项目
-
-::: tip 内容
-- 2021年国家社科基金重大项目“国家重大突发事件信息公开质量研究”子课题五“重大突发事件信息公开质量监督保障与自动检测研究”
-- 2020年国家社科基金国家应急管理体系建设研究专项“基于信息聚合和知识发现的突发重大公共卫生事件风险研判与决策协同机制研究”，在研
-- 参与2015年度国家社科基金一般项目“面向叙词表构建的知识组织生态系统研究”，国家社科基金规划办，2016.7-2019.2，第二完成人
-- 参与2013年度国家社科基金一般项目“国家叙词库构建方式与发展机制研究”，主要参加人，国家社科基金规划办，2013.7-2018.12，第三完成人
-- 参与2011年国家“十二五”科技支撑计划子课题七“《汉语主题词表》与英文超级科技词表的映射研究”，科技部十二五科技支撑计划，2011.7-2015.7，主要参加人
-- 参与国家语委“十二五”科研规划2011一般课题“基于云计算平台的语言资源整合应用方略研究”，国家语委，第四完成人
-- 参与中央级公益性科研院所专项资金“《汉语主题词表》编制与应用示范研究”，主要参加人，省部级课题（2010-2013年）
-:::
+const achievements = [
+  {
+    type: 'teaching',
+    typeText: 'Vertical Projects',
+    authors: '',
+    content: 'Presided over the 2025 Tianjin First Batch of New Form Teaching Materials Construction Project for General Universities: "Database Principles and Applications"'
+  },
+  {
+    type: 'teaching',
+    typeText: 'Vertical Projects',
+    authors: '',
+    content: 'Presided over the 2024 Open Fund Project of Information Engineering Laboratory, Institute of Scientific and Technical Information of China: "Research on Deep Mining of Scientific and Technological Literature for Retrieval Enhancement of Large Language Models"'
+  },
+  {
+    type: 'teaching',
+    typeText: 'Vertical Projects',
+    authors: '',
+    content: 'Presided over the 2023 Key Consulting Project of Tianjin Association for Science and Technology: "Construction of International Scientific and Technological Organization Database and Discovery of Scientific and Technological Hotspots"'
+  },
+  {
+    type: 'research',
+    typeText: 'Horizontal Projects',
+    authors: '',
+    content: 'Presided over the 2023 Cooperative Project of Tianjin Institute of Scientific and Technological Information: "Scientific and Technological Project Indexing and Processing Service"'
+  },
+  {
+    type: 'teaching',
+    typeText: 'Vertical Projects',
+    authors: '',
+    content: 'Presided over the 2023 Sub-project of International Collaborative Research Project InterPARES (International Research on Permanent Authentic Records in Electronic Systems): "Research on Automatic Construction Technology and Open Source Application of Trustworthy Knowledge Graph for the Protection of Ancient Medical Books" (Automatic construction and open source use of trustworthy knowledge graph of ancient Chinese and Italian medical texts)'
+  },
+  {
+    type: 'teaching',
+    typeText: 'Vertical Projects',
+    authors: '',
+    content: 'Presided over the 2021 General Project of National Social Science Foundation of China: "Research on Semantic-driven Academic Expertise Profiling of Researchers"'
+  },
+  {
+    type: 'teaching',
+    typeText: 'Vertical Projects',
+    authors: '',
+    content: 'Presided over the 2021 Special Evaluation Research Project of National Science and Technology Evaluation Center: "Research on Talent Innovation Ability Evaluation Model Based on Static Information of Expert Database"'
+  },
+  {
+    type: 'teaching',
+    typeText: 'Vertical Projects',
+    authors: '',
+    content: 'Presided over the 2020 Project of China National Committee for Terms in Sciences and Technologies: "Research on Integration Method of International Organization Term Bases"'
+  },
+  {
+    type: 'teaching',
+    typeText: 'Vertical Projects',
+    authors: '',
+    content: 'Presided over the 2017 General Project of Innovation Research Fund of Institute of Scientific and Technical Information of China: "Research on Dynamic Construction Method of Knowledge Graph for National Scientific and Technological Big Data"'
+  },
+  {
+    type: 'teaching',
+    typeText: 'Vertical Projects',
+    authors: '',
+    content: 'Presided over the 2016 General Project of National Social Science Foundation of China: "Research on Review Expert Discovery of Scientific Research Projects Based on Knowledge Organization"'
+  },
+  {
+    type: 'teaching',
+    typeText: 'Vertical Projects',
+    authors: '',
+    content: 'Presided over the 2015 Pre-research Fund of Institute of Scientific and Technical Information of China: "Research on Emergency Scientific and Technological Knowledge Aggregation Method"'
+  },
+  {
+    type: 'teaching',
+    typeText: 'Vertical Projects',
+    authors: '',
+    content: 'Presided over the 2011 Youth Project of National Social Science Foundation of China: "Research on Term Service Based on Knowledge Organization"'
+  },
+  {
+    type: 'teaching',
+    typeText: 'Vertical Projects',
+    authors: '',
+    content: 'Presided over the 2011 Sub-task "Construction of Engineering Technology Basic Thesaurus" of Sub-project 1 "Construction of Super Scientific and Technological Thesaurus and Ontology for Foreign Scientific and Technological Literature" of National 12th Five-Year Plan for Science and Technology Support Program'
+  },
+  {
+    type: 'teaching',
+    typeText: 'Vertical Projects',
+    authors: '',
+    content: 'Presided over the 2011 Pre-research Fund of Institute of Scientific and Technical Information of China: "Extraction of Term Reference Definitions Based on Scientific and Technological Corpora"'
+  },
+  {
+    type: 'teaching',
+    typeText: 'Vertical Projects',
+    authors: '',
+    content: 'Presided over the 2010 Pre-research Fund of Institute of Scientific and Technical Information of China: "Research on Scientific and Technological Thesaurus Construction and Maintenance Mechanism Based on User Interaction"'
+  }
+];
+</script>

@@ -13,6 +13,8 @@ interface ListType {
 interface IProps {
   title1: string;
   title2: string;
+  title3: string;
+  teachInfo: AnyObject
 }
 
 const props = withDefaults(defineProps<IProps>(), {})
@@ -59,31 +61,24 @@ const partners = reactive([
   <div class="team-container">
     <section class="teacher-section">
       <div class="section-header">
-        <h2>👨‍🏫 指导教师</h2>
+        <h2>👨‍🏫 {{title1}}</h2>
       </div>
       <div class="teacher-card">
         <div class="teacher-info">
           <div class="info-item">
-            <h3>宋培彦</h3>
-            <p class="title">教授 · 硕士生导师</p>
+            <h3>{{teachInfo?.name}}</h3>
+            <p class="title">{{teachInfo?.title}}</p>
           </div>
           <div class="info-block">
-            <h4>📚 教育背景</h4>
+            <h4>📚 {{teachInfo.educationTitle}}</h4>
             <ul>
-              <li>2007.9-2010.7 北京师范大学中文信息处理研究所，自然语言处理，博士</li>
-              <li>2003.9-2006.7 中国社会科学院研究生院，自然语言处理，硕士</li>
-              <li>1999.9-2003.7 山东省曲阜师范大学，汉语言文学（辅修计算机），学士</li>
+              <li v-for="item in teachInfo?.education">{{item}}</li>
             </ul>
           </div>
           <div class="info-block">
-            <h4>💼 工作经历</h4>
+            <h4>💼 {{teachInfo.experienceTitle}}</h4>
             <ul>
-              <li><strong>2023.1-至今</strong> 天津师范大学管理学院，教授，硕士生导师</li>
-              <li><strong>2022.1-2022.12</strong> 天津师范大学管理学院，副教授，硕士生导师</li>
-              <li><strong>2019.10-2021.12</strong> 天津师范大学管理学院，副研究馆员，硕士生导师</li>
-              <li><strong>2015.8-2019.10</strong> 中国科学技术信息研究所技术支持中心，副研究馆员、硕士生导师</li>
-              <li><strong>2010.7-2015.8</strong> 中国科学技术信息研究所信息资源中心，助理研究员、副研究馆员</li>
-              <li><strong>2006.7-2007.9</strong> 北京天宇智通信息技术有限公司，项目经理</li>
+              <li v-for="item in teachInfo?.experience">{{item}}</li>
             </ul>
           </div>
         </div>
@@ -94,7 +89,7 @@ const partners = reactive([
       <div class="members-wrapper">
         <div class="members-column">
           <div class="section-header">
-            <h2>👥 {{title1}}</h2>
+            <h2>👥 {{title2}}</h2>
             <span class="member-count">{{ coreMembers.length }} 人</span>
           </div>
           <div class="members-grid">
@@ -107,7 +102,7 @@ const partners = reactive([
 
         <div class="members-column partners">
           <div class="section-header">
-            <h2>🌟 {{title2}}</h2>
+            <h2>🌟 {{title3}}</h2>
             <span class="member-count">{{ partners.length }} 人</span>
           </div>
           <div class="members-grid">

@@ -6,7 +6,7 @@ export default defineConfig({
   ignoreDeadLinks: true,
   base: '/officialWebsite/',
   rewrites: {
-    'zh/index.md': 'index.md',
+    'zh/:path*': ':path*'
   },
   lastUpdated: true,
   locales: {
@@ -14,15 +14,15 @@ export default defineConfig({
       label: "中文",
       lang: "zh-CN",
       title: "首页",
-      link: '/zh/',
+      link: '/',
       themeConfig: {
         nav: [
-          { text: '团队成员', link: '/zh/team' },
-          { text: '研究项目', link: '/zh/project' },
-          { text: '获奖情况', link: '/zh/awards' },
-          { text: '研究成果', link: '/zh/achievement' },
-          { text: '教学工作', link: '/zh/teaching' },
-          { text: '系统', link: '/zh/system' },
+          { text: '团队成员', link: '/team' },
+          { text: '研究项目', link: '/project' },
+          { text: '获奖情况', link: '/awards' },
+          { text: '研究成果', link: '/achievement' },
+          { text: '教学工作', link: '/teaching' },
+          { text: '系统', link: '/system' },
         ],
         lastUpdated: {
           text: "最后更新",
@@ -54,7 +54,7 @@ export default defineConfig({
         nav: [
           { text: 'TEAM', link: '/en/team' },
           { text: 'PROJECTS', link: '/en/project' },
-          { text: 'ACTIVITIES', link: '/en/activity' },
+          { text: 'AWARDS', link: '/en/awards' },
           { text: 'ACHIEVEMENTS', link: '/en/achievement' },
           { text: 'TEACHING', link: '/en/teaching' },
           { text: 'SYSTEMS', link: '/en/system' },
