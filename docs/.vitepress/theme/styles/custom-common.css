@@ -93,11 +93,11 @@
 .VPNavBar {
     background: var(--vp-nav-bg-color);
 }
-.title[data-v-6945d5bf] {
+.wrapper .title {
     color: #ffffff;
 }
 
-.VPNavBarMenuLink[data-v-deb295f5] {
+.wrapper .VPNavBarMenuLink {
     color: #ffffff;
 }
 [class^='vpi-']:not(.bg), [class*=' vpi-']:not(.bg), .vp-icon:not(.bg) {
