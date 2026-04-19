@@ -65,7 +65,7 @@ const profileImg = '/officialWebsite/images/001.png';
 <style scoped>
 .profile-card {
   width: 100%;
-  max-width: 800px;
+  max-width: 100%;
   background: transparent; /* 根据背景需要调整 */
 }
 
@@ -157,5 +157,9 @@ const profileImg = '/officialWebsite/images/001.png';
     gap: 12px;
     align-items: center;
   }
+}
+
+:deep(.ant-card-head-title) {
+  white-space: wrap !important;
 }
 </style>

@@ -17,11 +17,11 @@ export default defineConfig({
       link: '/zh/',
       themeConfig: {
         nav: [
-          { text: '首页', link: '/zh/home' },
           { text: '团队成员', link: '/zh/team' },
           { text: '研究项目', link: '/zh/project' },
           { text: '获奖情况', link: '/zh/awards' },
           { text: '研究成果', link: '/zh/achievement' },
+          { text: '教学工作', link: '/zh/teaching' },
           { text: '系统', link: '/zh/system' },
         ],
         lastUpdated: {
@@ -52,11 +52,11 @@ export default defineConfig({
       title: "home",
       themeConfig: {
         nav: [
-          { text: 'PERSONAGE', link: '/en/home' },
           { text: 'TEAM', link: '/en/team' },
           { text: 'PROJECTS', link: '/en/project' },
           { text: 'ACTIVITIES', link: '/en/activity' },
           { text: 'ACHIEVEMENTS', link: '/en/achievement' },
+          { text: 'TEACHING', link: '/en/teaching' },
           { text: 'SYSTEMS', link: '/en/system' },
         ],
         lastUpdated: {

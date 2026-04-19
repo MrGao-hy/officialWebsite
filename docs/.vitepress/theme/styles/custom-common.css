@@ -93,7 +93,7 @@
 .VPNavBar {
     background: var(--vp-nav-bg-color);
 }
-.wrapper .title {
+.wrapper .VPNavBarTitle .title {
     color: #ffffff;
 }
 

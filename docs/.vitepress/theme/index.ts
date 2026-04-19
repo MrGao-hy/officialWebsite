@@ -3,6 +3,8 @@ import DefaultTheme from 'vitepress/theme'
 import Home from '../components/Home.vue';
 import Team from '../components/Team.vue';
 import Systems from '../components/Systems.vue';
+import Achievement from '../components/Achievement.vue';
+import Awards from '../components/Awards.vue';
 import Layout from "./CustomLayout.vue";
 import './styles/custom-block.css'
 import './styles/custom-common.css'
@@ -17,6 +19,8 @@ export default {
         app.component('Home', Home)
         app.component('Team', Team)
         app.component('Systems', Systems)
+        app.component('Achievement', Achievement)
+        app.component('Awards', Awards)
         app.use(Antd);
     }
 } satisfies Theme

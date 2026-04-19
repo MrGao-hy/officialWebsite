@@ -13,7 +13,6 @@
           <template #actions>
             <a-button type="primary" danger @click="onOpenUrl(ite.url)">登录系统</a-button>
             <a-button type="primary" @click="onOpenDocs(ite.docs)">操作说明</a-button>
-            <a-button >视频演示</a-button>
           </template>
           <a-card-meta :title="ite.title" :description="ite.description">
           </a-card-meta>
@@ -31,7 +30,7 @@ const systems = reactive([
     list: [
 
       {
-        image: "images/img.png",
+        image: "/officialWebsite/images/img.png",
         title: "术语服务系统",
         description: "点击下方各按钮了解更多",
         url: "http://10.20.32.102:8502/",
@@ -39,7 +38,7 @@ const systems = reactive([
         video: "",
       },
       {
-        image: "images/img_1.png",
+        image: "/officialWebsite/images/img_1.png",
         title: "AI4S因果知识发现系统",
         description: "点击下方各按钮了解更多",
         url: "http://10.20.32.102:8610/",
@@ -47,7 +46,7 @@ const systems = reactive([
         video: "",
       },
       {
-        image: "images/img_2.png",
+        image: "/officialWebsite/images/img_2.png",
         title: "简报服务系统",
         description: "点击下方各按钮了解更多",
         url: "http://10.20.32.102:8503/",
@@ -61,7 +60,7 @@ const systems = reactive([
     list: [
 
       {
-        image: "images/img_3.png",
+        image: "/officialWebsite/images/img_3.png",
         title: "科研人员开源学术简历聚合系统",
         description: "点击下方各按钮了解更多",
         url: "http://10.20.32.102:8501/",
@@ -69,7 +68,7 @@ const systems = reactive([
         video: "",
       },
       {
-        image: "images/img_4.png",
+        image: "/officialWebsite/images/img_4.png",
         title: "科研诚信风险预警平台",
         description: "点击下方各按钮了解更多",
         url: "http://10.20.32.102:8505/",
@@ -82,7 +81,7 @@ const systems = reactive([
     title: "“古道”罕见病术语知识发现系统",
     list: [
       {
-        image: "images/img_5.png",
+        image: "/officialWebsite/images/img_5.png",
         title: "古籍罕见病知识服务系统",
         description: "点击下方各按钮了解更多",
         url: "http://10.20.32.102:8506/",
@@ -90,7 +89,7 @@ const systems = reactive([
         video: "",
       },
       {
-        image: "images/img_6.png",
+        image: "/officialWebsite/images/img_6.png",
         title: "罕见病知识问答",
         description: "点击下方各按钮了解更多",
         url: "http://10.20.32.102:8611/",
@@ -98,7 +97,7 @@ const systems = reactive([
         video: "",
       },
       {
-        image: "images/img_7.png",
+        image: "/officialWebsite/images/img_7.png",
         title: "胡博深的“温病知识问答”",
         description: "点击下方各按钮了解更多",
         url: "http://192.168.12.102:8615",
@@ -108,19 +107,19 @@ const systems = reactive([
     ]
   },
   {
-    title: "“就道”阅读智能评价与分析系统",
+    title: "温病知识问答",
     list: [
       {
-        image: "images/img_8.png",
-        title: "韩雅霖的“图书适配性评价“",
+        image: "/officialWebsite/images/img_8.png",
+        title: "图书适配性评价",
         description: "点击下方各按钮了解更多",
         url: "http://192.168.12.102:8613",
         docs: "https://www.kdocs.cn/l/cpgentULrToM",
         video: "",
       },
       {
-        image: "images/img_9.png",
-        title: "郭欣桐的“中小学阅读能力评价”",
+        image: "/officialWebsite/images/img_9.png",
+        title: "中小学阅读能力评价",
         description: "点击下方各按钮了解更多",
         url: "http://192.168.12.102:8614",
         docs: "https://www.kdocs.cn/l/cpgentULrToM",

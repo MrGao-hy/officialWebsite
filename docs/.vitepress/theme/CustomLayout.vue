@@ -4,10 +4,6 @@
     <template #doc-after>
       <div id="gitalk-container"></div>
     </template>
-    <!-- 侧边导航栏，用来放广告位的 -->
-    <template #nav-screen-content-before>
-      111
-    </template>
   </Layout>
 </template>
 
