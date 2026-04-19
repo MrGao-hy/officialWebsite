@@ -1,9 +1,9 @@
 <template>
   <a-config-provider :theme="darkTheme">
     <Layout>
-      <!-- 文档下面的评论 -->
-      <template #doc-after>
-        <div id="gitalk-container"></div>
+      <!-- layout-bottom插槽 -->
+      <template #layout-bottom>
+        <bsz />
       </template>
     </Layout>
   </a-config-provider>

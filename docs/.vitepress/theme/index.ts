@@ -4,6 +4,7 @@ import Home from '../components/Home.vue';
 import Team from '../components/Team.vue';
 import Systems from '../components/Systems.vue';
 import Achievement from '../components/Achievement.vue';
+import Bsz from '../components/Bsz.vue';
 import Layout from "./CustomLayout.vue";
 import './styles/custom-block.css'
 import './styles/custom-common.css'
@@ -17,6 +18,7 @@ export default {
     Layout,
     enhanceApp({ app, router }) {
         // 注册自定义全局组件
+        app.component('Bsz', Bsz)
         app.component('Home', Home)
         app.component('Team', Team)
         app.component('Systems', Systems)
