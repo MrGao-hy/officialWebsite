@@ -70,13 +70,13 @@ const filteredAchievements = computed(() => {
 }
 
 .achievement-header {
-  background-color: #e6f7ff;
+  background-color: var(--vp-c-brand-1);
   padding: 15px 0;
   margin-bottom: 20px;
   .achievement-title {
     font-size: 20px;
     font-weight: 600;
-    color: #333;
+    color: #fff;
     text-align: center;
     margin: 0;
   }
@@ -89,10 +89,10 @@ const filteredAchievements = computed(() => {
   .tab-btn {
     padding: 6px 16px;
     margin: 0 5px;
-    border: 1px solid #d9d9d9;
+    border: 1px solid var(--vp-c-brand-1);
     border-radius: 16px;
-    background-color: #fff;
-    color: #333;
+    background-color: var(--vp-c-bg);
+    color: var(--vp-c-brand-1);
     cursor: pointer;
     font-size: 14px;
     transition: all 0.3s;
@@ -115,11 +115,11 @@ const filteredAchievements = computed(() => {
 .achievement-item {
   display: flex;
   padding: 12px 0;
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid var(--vp-c-border);
   align-items: flex-start;
   transition: background-color 0.2s ease;
   &:hover {
-    background-color: #f5f7ff;
+    background-color: var(--vp-c-purple-soft);
   }
   &:last-child {
     border-bottom: none;
@@ -130,7 +130,6 @@ const filteredAchievements = computed(() => {
   width: 30px;
   font-size: 14px;
   font-weight: 500;
-  color: #666;
   text-align: center;
   margin-right: 15px;
   padding-top: 2px;
@@ -151,7 +150,6 @@ const filteredAchievements = computed(() => {
   flex: 1;
   font-size: 14px;
   line-height: 1.5;
-  color: #333;
   .authors {
     font-weight: 500;
   }

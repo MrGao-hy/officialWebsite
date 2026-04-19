@@ -2,4 +2,121 @@
 layout: page
 ---
 
-<Systems />
+<Systems :actions="actions" :systems="systems" />
+
+<script setup>
+import {reactive} from "vue";
+
+const actions = reactive([
+  {
+    name: "登录系统",
+  },
+  {
+    name: "操作说明",
+  }
+]);
+const systems = reactive([
+  {
+    title: "“知天下”知识发现系统",
+    list: [
+
+      {
+        image: "/officialWebsite/images/img.png",
+        title: "术语服务系统",
+        description: "点击下方各按钮了解更多",
+        url: "http://10.20.32.102:8502/",
+        docs: "https://www.kdocs.cn/l/cpgentULrToM",
+        video: "",
+      },
+      {
+        image: "/officialWebsite/images/img_1.png",
+        title: "AI4S因果知识发现系统",
+        description: "点击下方各按钮了解更多",
+        url: "http://10.20.32.102:8610/",
+        docs: "https://www.kdocs.cn/l/cpgentULrToM",
+        video: "",
+      },
+      {
+        image: "/officialWebsite/images/img_2.png",
+        title: "简报服务系统",
+        description: "点击下方各按钮了解更多",
+        url: "http://10.20.32.102:8503/",
+        docs: "https://www.kdocs.cn/l/cpgentULrToM",
+        video: "",
+      }
+    ]
+  },
+  {
+    title: "“正道”人才画像系统",
+    list: [
+
+      {
+        image: "/officialWebsite/images/img_3.png",
+        title: "科研人员开源学术简历聚合系统",
+        description: "点击下方各按钮了解更多",
+        url: "http://10.20.32.102:8501/",
+        docs: "https://www.kdocs.cn/l/cpgentULrToM",
+        video: "",
+      },
+      {
+        image: "/officialWebsite/images/img_4.png",
+        title: "科研诚信风险预警平台",
+        description: "点击下方各按钮了解更多",
+        url: "http://10.20.32.102:8505/",
+        docs: "https://www.kdocs.cn/l/cpgentULrToM",
+        video: "",
+      },
+    ]
+  },
+  {
+    title: "“古道”罕见病术语知识发现系统",
+    list: [
+      {
+        image: "/officialWebsite/images/img_5.png",
+        title: "古籍罕见病知识服务系统",
+        description: "点击下方各按钮了解更多",
+        url: "http://10.20.32.102:8506/",
+        docs: "https://www.kdocs.cn/l/cpgentULrToM",
+        video: "",
+      },
+      {
+        image: "/officialWebsite/images/img_6.png",
+        title: "罕见病知识问答",
+        description: "点击下方各按钮了解更多",
+        url: "http://10.20.32.102:8611/",
+        docs: "https://www.kdocs.cn/l/cpgentULrToM",
+        video: "",
+      },
+      {
+        image: "/officialWebsite/images/img_7.png",
+        title: "温病知识问答",
+        description: "点击下方各按钮了解更多",
+        url: "http://192.168.12.102:8615",
+        docs: "https://www.kdocs.cn/l/cpgentULrToM",
+        video: "",
+      }
+    ]
+  },
+  {
+    title: "“就道”阅读智能评价与分析系统",
+    list: [
+      {
+        image: "/officialWebsite/images/img_8.png",
+        title: "图书适配性评价",
+        description: "点击下方各按钮了解更多",
+        url: "http://192.168.12.102:8613",
+        docs: "https://www.kdocs.cn/l/cpgentULrToM",
+        video: "",
+      },
+      {
+        image: "/officialWebsite/images/img_9.png",
+        title: "中小学阅读能力评价",
+        description: "点击下方各按钮了解更多",
+        url: "http://192.168.12.102:8614",
+        docs: "https://www.kdocs.cn/l/cpgentULrToM",
+        video: "",
+      },
+    ]
+  }
+]);
+</script>

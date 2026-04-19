@@ -141,12 +141,11 @@ const partners = reactive([
 .section-header h2 {
   margin: 0;
   font-size: 1.2rem;
-  color: #1a1a2e;
+  color: var(--vp-c-text-1);
 }
 
 .member-count {
   background: #667eea;
-  color: white;
   padding: 2px 10px;
   border-radius: 20px;
   font-size: 0.75rem;
@@ -218,7 +217,7 @@ const partners = reactive([
 .member-card {
   padding: 8px 12px;
   border-left: 3px solid #667eea;
-  background: #f8f9fa;
+  background: var(--vp-c-divider);
   border-radius: 0 6px 6px 0;
   transition: all 0.2s ease;
 }
@@ -231,19 +230,18 @@ const partners = reactive([
 .member-name {
   margin: 0 0 2px 0;
   font-size: 0.9rem;
-  color: #1a1a2e;
   font-weight: 600;
 }
 
 .member-desc {
   margin: 0;
   font-size: 0.8rem;
-  color: #666;
+  color: var(--vp-c-text-3);
   line-height: 1.4;
 }
 
 .partners .member-card {
-  border-left-color: #848484;
+  border-left-color: var(--vp-c-border);
 }
 
 .partners .member-card:hover {

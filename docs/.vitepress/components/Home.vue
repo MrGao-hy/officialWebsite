@@ -80,12 +80,11 @@ const profileImg = '/officialWebsite/images/001.png';
   flex-shrink: 0;
   border-radius: 50%;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  padding: 4px;
-  background: #fff;
+  //background: #fff;
 }
 
 .profile-avatar {
-  border: 1px solid #f0f0f0;
+  border: 1px solid var(--vp-c-border);
 }
 
 .info-content {
@@ -95,14 +94,14 @@ const profileImg = '/officialWebsite/images/001.png';
 .name {
   font-size: 42px;
   font-weight: 800;
-  color: #262626;
+  color: var(--vp-c-text-1);
   margin-bottom: 16px;
   letter-spacing: 2px;
 }
 
 .title-row {
   font-size: 18px;
-  color: #595959;
+  color: var(--vp-c-text-2);
   margin-bottom: 8px;
   display: flex;
   align-items: center;
@@ -110,7 +109,7 @@ const profileImg = '/officialWebsite/images/001.png';
 
 .university {
   font-size: 18px;
-  color: #595959;
+  color: var(--vp-c-text-3);
   margin-bottom: 24px;
 }
 
@@ -125,7 +124,7 @@ const profileImg = '/officialWebsite/images/001.png';
   align-items: center;
   gap: 8px;
   font-size: 16px;
-  color: #8c8c8c;
+  color: var(--vp-c-text-3);
 }
 
 .icon-blue {
@@ -134,7 +133,7 @@ const profileImg = '/officialWebsite/images/001.png';
 }
 
 .link-text {
-  color: #8c8c8c;
+  color: var(--vp-c-text-3);
   text-decoration: none;
 }
 
