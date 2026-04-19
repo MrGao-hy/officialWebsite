@@ -4,6 +4,7 @@ layout: home
 hero:
   name: Peiyan Song
   text: Professor，Postgraduate Tutor
+  tagline: Associate Professor, Department of Data Science, School of Management | Deputy Director, Academic Affairs Office
   actions:
     - theme: brand
       text: School of Management, Tianjin Normal University

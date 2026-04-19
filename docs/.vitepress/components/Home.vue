@@ -59,7 +59,7 @@
 import { MailOutlined, EnvironmentOutlined } from '@ant-design/icons-vue';
 
 // 这里替换为你实际的图片路径
-const profileImg = '../public/images/001.png';
+const profileImg = '/officialWebsite/images/001.png';
 </script>
 
 <style scoped>
