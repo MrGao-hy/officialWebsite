@@ -1,0 +1,109 @@
+/* 正文中的链接 */
+.vp-doc a {
+    color: var(--vp-c-brand);
+    text-decoration: none;
+    padding: 2px 6px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+/* 悬浮时出现背景色 */
+.vp-doc a:hover {
+    background-color: var(--vp-c-brand-soft);  /* 品牌色的浅色背景 */
+    text-decoration: none;
+}
+
+:root {
+
+    /* 列表悬停专用（更明显） */
+    --li-hover-bg: #eef4ff;
+    --li-hover-left: #667eea;
+    --vp-nav-bg-color: #0F2C4C;
+}
+
+.dark {
+
+    --li-hover-bg: #2a3552;
+    --li-hover-left: #87a5ff;
+}
+
+/* 列表项基础样式 */
+.vp-doc li {
+    position: relative;
+    padding: 6px 10px 6px 14px;
+    margin: 5px 0;
+    border-radius: 8px;
+}
+
+/* 左侧小竖条高亮动画（超级好看） */
+.vp-doc li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateX(-50%) scaleY(0.6);
+    width: 3px;
+    height: 0;
+    border-radius: 3px;
+    transition: height 0.28s cubic-bezier(0.34, 0.93, 0.72, 1);
+}
+
+/* 🔥 悬停效果：极强突出 + 高级动画 */
+.vp-doc li:hover {
+    transform: translateX(20px) scale(1.01); /* 轻微上浮+放大 */
+    box-shadow: 0 4px 12px var(--vp-c-divider);
+    transition: ease 0.3s;
+    overflow: hidden;
+}
+
+.vp-doc li:hover::before {
+    height: 100%; /* 左侧竖条展开 */
+    transform: translateY(-50%) scaleY(1);
+}
+
+.info li:hover {
+    background: var(--custom-block-info-hover);
+}
+
+.tip li:hover {
+    background: var(--custom-block-tip-hover);
+}
+
+.danger li:hover {
+    background: var(--custom-block-danger-hover);
+}
+
+.info li::before {
+    background: var(--custom-block-info-left);
+}
+
+.tip li::before {
+    background: var(--custom-block-tip-left);
+}
+
+.danger li::before {
+    background: var(--custom-block-danger-left);
+}
+
+.VPTeamPage {
+    margin: 0!important;
+}
+
+/* 头部颜色自定义 */
+.VPNavBar {
+    background: var(--vp-nav-bg-color);
+}
+.wrapper .VPNavBarTitle .title {
+    color: #ffffff;
+}
+
+.wrapper .VPNavBarMenuLink {
+    color: #ffffff;
+}
+[class^='vpi-']:not(.bg), [class*=' vpi-']:not(.bg), .vp-icon:not(.bg) {
+    background-color: #ffffff;
+}
+
+.vp-doc img {
+    margin: 0;
+}
