@@ -107,3 +107,11 @@
 .vp-doc img {
     margin: 0;
 }
+
+.VPFooter {
+    padding: 10px 0 0 !important;
+}
+
+.VPHome {
+    margin: 0 !important;
+}
