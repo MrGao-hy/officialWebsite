@@ -50,6 +50,8 @@ const onOpenUrl = (url) => {
   }
   .ant-card {
     margin-bottom: 40px;
+    width: 100%;
+    max-width: 1200px;
   }
 }
 
@@ -65,12 +67,30 @@ const onOpenUrl = (url) => {
   :deep(.ant-flex) {
     flex-direction: column !important;
     align-items: center !important;
+    gap: 16px !important;
   }
 
   :deep(.ant-card) {
     width: 100% !important;
-    max-width: 350px;
+    max-width: 100%;
     margin-bottom: 20px !important;
+  }
+  
+  :deep(.ant-card-body) {
+    padding: 16px !important;
+  }
+  
+  :deep(.ant-card-meta-title) {
+    font-size: 16px !important;
+  }
+  
+  :deep(.ant-card-meta-description) {
+    font-size: 14px !important;
+  }
+  
+  :deep(.ant-btn) {
+    font-size: 14px !important;
+    padding: 6px 12px !important;
   }
 }
 
@@ -81,10 +101,18 @@ const onOpenUrl = (url) => {
       font-size: 20px;
     }
   }
-
-  :deep(.ant-card) {
-    width: 100% !important;
-    max-width: 300px;
+  
+  :deep(.ant-card-meta-title) {
+    font-size: 14px !important;
+  }
+  
+  :deep(.ant-card-meta-description) {
+    font-size: 13px !important;
+  }
+  
+  :deep(.ant-btn) {
+    font-size: 12px !important;
+    padding: 4px 8px !important;
   }
 }
 </style>

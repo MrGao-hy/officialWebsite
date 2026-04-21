@@ -144,6 +144,7 @@ const partners = reactive([
   padding: 2px 10px;
   border-radius: 20px;
   font-size: 0.75rem;
+  color: #fff;
 }
 
 .teacher-card {
@@ -244,13 +245,18 @@ const partners = reactive([
 }
 
 @media (max-width: 768px) {
+  .team-container {
+    padding: 12px;
+  }
+  
   .members-wrapper {
     grid-template-columns: 1fr;
     gap: 16px;
   }
 
   .members-grid {
-    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     gap: 10px;
   }
   
@@ -262,10 +268,54 @@ const partners = reactive([
     font-size: 1.2rem;
   }
   
-  .member-avatar {
-    width: 50px;
-    height: 50px;
+  .info-block {
+    padding: 10px 12px;
+  }
+  
+  .info-block h4 {
+    font-size: 0.85rem;
+  }
+  
+  .info-block li {
+    font-size: 0.75rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.1rem;
+  }
+  
+  .member-card {
+    padding: 8px;
+  }
+  
+  .member-name {
+    font-size: 0.85rem;
+  }
+  
+  .member-desc {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .members-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+  
+  .teacher-info h3 {
+    font-size: 1.1rem;
+  }
+  
+  .section-header h2 {
     font-size: 1rem;
+  }
+  
+  .member-name {
+    font-size: 0.8rem;
+  }
+  
+  .member-desc {
+    font-size: 0.7rem;
   }
 }
 </style>

@@ -143,15 +143,83 @@ const props = defineProps({
 }
 
 /* 适配移动端 */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .card-container {
     flex-direction: column;
     text-align: center;
+    gap: 20px;
   }
+  
+  .profile-avatar {
+    width: 120px !important;
+    height: 120px !important;
+  }
+  
+  .name {
+    font-size: 28px;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+  }
+  
+  .title-row {
+    font-size: 16px;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .university {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  
   .contact-info {
     flex-direction: column;
     gap: 12px;
     align-items: center;
+  }
+  
+  .contact-item {
+    font-size: 14px;
+  }
+  
+  .icon-blue {
+    font-size: 16px;
+  }
+  
+  :deep(.ant-card) {
+    margin-bottom: 20px !important;
+  }
+  
+  :deep(.ant-flex > .ant-card) {
+    width: 100% !important;
+    max-width: 100%;
+  }
+  
+  .address {
+    white-space: normal;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-avatar {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  
+  .name {
+    font-size: 24px;
+  }
+  
+  .title-row {
+    font-size: 14px;
+  }
+  
+  .university {
+    font-size: 14px;
+  }
+  
+  .contact-item {
+    font-size: 13px;
   }
 }
 
